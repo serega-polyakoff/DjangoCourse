@@ -1,7 +1,16 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'main/index.html')
+    data = {
+        'title': 'Главная страница',
+        'values': ['GTASA','RDR','GTA5'],
+        'obj': {
+            'car': 'BMW',
+            'age': '18',
+            'hobby': 'Football'
+        }
+    }
+    return render(request, 'main/index.html', {'title':'Главная страница'})
 
 def about(request):
     return render(request, 'main/about.html')
