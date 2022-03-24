@@ -5,16 +5,15 @@
 {% block content %}
 <div class="features">
     <h1>{{ title }}</h1>
+    {% filter upper %}
     <p>Страница временно недоступна на территории вашего региона</p>
+    {% endfilter %}
     <button class="btn btn-warning">На страницу про нас</button>
 
     {% for el in values %}
     <p>{{ el }}</p>
     {% endfor %}
 
-    {% for el in obj %}
-    <p>{{ el }}</p>
-    {% endfor %}
 
 </div>
 {% endblock %}

@@ -6,11 +6,11 @@ def index(request):
         'values': ['GTASA','RDR','GTA5'],
         'obj': {
             'car': 'BMW',
-            'age': '18',
+            'age': 18,
             'hobby': 'Football'
         }
     }
-    return render(request, 'main/index.html', {'title':'Главная страница'})
+    return render(request, 'main/index.html', data)
 
 def about(request):
     return render(request, 'main/about.html')
