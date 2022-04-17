@@ -12,15 +12,15 @@ class ArticlesForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Название статьи'
             }),
-            "title": TextInput(attrs={
+            "anons": TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Анонс статьи'
             }),
-            "title": DateTimeInput(attrs={
+            "date": DateTimeInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Дата публикации'
             }),
-            "title": Textarea(attrs={
+            "full_text": Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Текст статьи'
             })
